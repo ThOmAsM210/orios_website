@@ -34,10 +34,12 @@
     height: 100vh;
     z-index: -10;
 
-    background: #070636;
-    background: radial-gradient(circle, rgba(7, 6, 54, 1) 5%, rgb(9, 26, 62) 40%, rgb(0, 0, 1) 87%);
+    
+    background: #a3c1f7;
+    background: radial-gradient(circle, rgba(163, 193, 247, 1) 5%, rgba(135, 206, 250, 0.8) 40%, rgba(173, 216, 230, 0.6) 87%);
+    
     filter: blur(8px);
-  }
+}
   
   /* Container */
   .container {
