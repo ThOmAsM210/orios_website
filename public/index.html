@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Orios</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet" />
+  <!-- AOS Library for scroll animations -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Font Awesome (replace "yourkitid" with your actual kit ID or use a CDN) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/brands.min.js" integrity="sha512-ILOQokRQNF0S8SKV6fnaLNj02CmZnDWmYUr3zlH4jwToep0lWc7twuTzF+Mm0cKPdszi0xe8KymVi2y7mAweVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body data-lang="it">
+  
+  <!-- Navigation Header -->
+  <header>
+    <nav class="navbar">
+      <div class="container nav-container">
+        <a href="#hero" class="logo">ORIOS</a>
+        <ul class="nav-menu">
+          <li><a href="#hero" id="navHome">Home</a></li>
+          <li><a href="#features" id="navFeatures">Caratteristiche</a></li>
+          <li><a href="#about" id="navAbout">Chi Siamo</a></li>
+          <li><a href="#contact" id="navContact">Contatti</a></li>
+        </ul>
+        <!-- Language Switcher -->
+         <!--
+        <div class="language-switcher">
+          <button class="lang-btn active" data-lang="it">IT</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>-->
+        <!-- Mobile Menu Toggle -->
+        <div class="mobile-menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-smoke">
+  <div class="smoke-background"></div>
+
+  <div class="orios-wrapper">
+    <h1 class="orios-text">ORIOS</h1>
+    <p class="subtitle">Automatizza. Ottimizza. Insegna.</p>
+    <a href="#features" class="btn-smoke">Scopri di più</a>
+  </div>
+</section>
+
+  <!-- Main Content -->
+  <main>
+    <div class="global-background"></div>
+    <!-- Features Section -->
+<section id="features" class="features-modern">
+  <div class="features-bg-layer"></div> <!-- NEW background layer -->
+  <div class="container">
+    <h2 class="features-title">Funzionalità principali</h2>
+    <div class="features-grid">
+      <div class="feature-item">
+        <div class="feature-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-clock-icon lucide-calendar-clock"><path d="M16 14v2.2l1.6 1"/><path d="M16 2v4"/><path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5"/><path d="M3 10h5"/><path d="M8 2v4"/><circle cx="16" cy="16" r="6"/></svg>
+        </div>
+        
+        <h3>Pianificazione Intelligente</h3>
+        <p>Organizza sostituzioni in pochi clic.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-refresh-cw-icon lucide-refresh-cw"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg>
+        </div>
+        <h3>Gestione Scambi</h3>
+        <p>Coordina scambi tra insegnanti con notifiche e approvazioni integrate.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-column-stacked-icon lucide-chart-column-stacked"><path d="M11 13H7"/><path d="M19 9h-4"/><path d="M3 3v16a2 2 0 0 0 2 2h16"/><rect x="15" y="5" width="4" height="12" rx="1"/><rect x="7" y="8" width="4" height="9" rx="1"/></svg>
+        </div>
+        <h3>Statistiche & Report</h3>
+        <p>Monitora attività, sostituzioni e coperture con grafici intuitivi.</p>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2 data-aos="fade-left" id="aboutTitle">Chi Siamo</h2>
+        <div class="about-content" data-aos="fade-up">
+          <!-- Replace with your team image -->
+          <img src="asset/images/smoke-blue.jpg" alt="Chi Siamo" class="about-img" />
+          <div class="about-text">
+            <p id="aboutParagraph1">
+              Siamo due sviluppatori appassionati, uniti dalla voglia di innovare e semplificare la pianificazione degli orari degli insegnanti. La nostra soluzione semplifica le attività amministrative, permettendo agli insegnanti di concentrarsi su ciò che conta davvero: l'istruzione.
+            </p>
+            <p id="aboutParagraph2">
+              Con competenze complementari e una visione condivisa, abbiamo creato TeacherFlow utilizzando tecnologie all'avanguardia per offrire un'esperienza utente eccezionale e funzionalità moderne. Siamo in due e crediamo nel potere della collaborazione per trasformare il mondo della scuola.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+    <div class="container">
+      <h2 data-aos="fade-right" id="contactTitle">Contattaci</h2>
+
+      <!-- Success and error messages -->
+      <div id="successMessage" style="display:none; color:green; text-align:center;">
+        ✅ Il tuo messaggio è stato inviato con successo!
+      </div>
+      <div id="errorMessage" style="display:none; color:red; text-align:center;">
+        ❌ Errore nell'invio. Riprova più tardi.
+      </div>
+
+      <form id="contactForm" class="contact-form" data-aos="zoom-in", method="post">
+        <input
+          type="text"
+          name="name"
+          id="contactName"
+          placeholder="Il tuo nome"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          id="contactEmail"
+          placeholder="La tua email"
+          required
+        />
+        <textarea
+          name="message"
+          id="contactMessage"
+          placeholder="Il tuo messaggio"
+          required
+        ></textarea>
+        <button type="submit" class="btn contact-btn" id="contactBtn">Invia</button>
+      </form>
+    </div>
+  </section>
+
+  <script>
+  document.getElementById("contactForm").addEventListener("submit", async function(e) {
+    e.preventDefault();
+
+    const data = {
+      name: document.getElementById("contactName").value,
+      email: document.getElementById("contactEmail").value,
+      message: document.getElementById("contactMessage").value
+    };
+
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data)
+    });
+
+    if (response.ok) {
+      document.getElementById("successMessage").style.display = "block";
+      document.getElementById("errorMessage").style.display = "none";
+      document.getElementById("contactForm").reset();
+    } else {
+      document.getElementById("errorMessage").style.display = "block";
+      document.getElementById("successMessage").style.display = "none";
+    }
+  });
+  </script>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-container">
+      <p id="footerText">&copy; 2025 Orios. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+  <!-- Back-to-Top Button -->
+  <a href="#hero" id="back-to-top" title="Back to Top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+
+  <!-- AOS Animation Library -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
