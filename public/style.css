@@ -390,11 +390,16 @@
     gap: 30px;
   }
   .about-img {
-    flex: 1 1 300px;
-    max-width: 500px;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-  }
+  flex: 1 1 300px;
+  max-width: 500px;
+  width: 100%;        /* 👈 ensures it scales inside container */
+  height: auto;       /* 👈 keeps aspect ratio */
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  display: block;     /* prevents extra spacing issues */
+  object-fit: cover;  /* optional: keeps it nicely cropped */
+}
+
   .about-img:hover {
     transform: scale(1.05);
   }
