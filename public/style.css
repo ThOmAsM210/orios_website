@@ -30,13 +30,21 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     z-index: -10;
 
-    background: #070636;
     background: radial-gradient(circle, rgba(7, 6, 54, 1) 5%, rgb(9, 26, 62) 40%, rgb(0, 0, 1) 87%);
+    background-size: cover;   /* ensures it fills all screen sizes */
+    background-position: center;
     filter: blur(8px);
+  }
+
+  @media (max-width: 768px) {
+    .global-background {
+      filter: blur(4px);   /* lighter blur for performance */
+      background-size: cover;
+    }
   }
   
   /* Container */
@@ -110,6 +118,13 @@
   .nav-menu li a:hover::after {
     width: 100%;
   }
+
+  @media (max-width: 768px) {
+  .global-background {
+    filter: blur(4px);   /* lighter blur for performance */
+    background-size: cover;
+  }
+}
 
 /* Language Switcher & Mobile Toggle stay the same */
 
